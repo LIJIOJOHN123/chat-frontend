@@ -1,5 +1,25 @@
-@import "tailwindcss";
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.red{
-    fill: red
+/* Custom dark mode overrides */
+.dark .bg-white {
+  background-color: #1a202c;
+}
+
+.dark .text-black {
+  color: #ffffff;
+}
+
+.dark .bg-gray-200 {
+  background-color: #2d3748;
+}
+
+.dark .text-gray-800 {
+  color: #e2e8f0;
+}
+
+.transition {
+  transition: background-color 0.3s, color 0.3s;
 }
